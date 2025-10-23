@@ -51,7 +51,18 @@ export class GameScene extends Phaser.Scene {
         this.cursors = this.input.keyboard!.createCursorKeys();
         this.choiceGates = this.physics.add.group();
 
-        this.physics.add.overlap(this.player, this.choiceGates, this.handlePlayerChoice, undefined, this);
+        this.physics.add.overlap(
+            this.player,
+            this.choiceGates,
+            (player, gate) => {
+                this.handlePlayerChoice(
+                    player as Phaser.Physics.Arcade.Sprite,
+                    gate as Phaser.Physics.Arcade.Sprite
+                );
+            },
+            undefined,
+            this
+        );
 
         // Bắt đầu game
         this.nextQuestion();
@@ -103,12 +114,11 @@ export class GameScene extends Phaser.Scene {
         });
     }
 
-    handlePlayerChoice(player: Phaser.Types.Physics.Arcade.GameObjectWithBody, gate: Phaser.Types.Physics.Arcade.GameObjectWithBody) {
+    handlePlayerChoice(player: Phaser.Physics.Arcade.Sprite, gate: Phaser.Physics.Arcade.Sprite) {
         if (!this.canChoose) return;
         this.canChoose = false;
 
-        const gateSprite = gate as Phaser.Physics.Arcade.Sprite;
-        const isCorrect = gateSprite.getData('isCorrect');
+        const isCorrect = gate.getData('isCorrect');
 
         if (isCorrect) {
             this.score += 10;
