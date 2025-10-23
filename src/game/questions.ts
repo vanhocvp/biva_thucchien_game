@@ -19,5 +19,11 @@ export const questions: Question[] = [
     image_right: 'eat_now.png',    // Ảnh icon "Ăn luôn"
     correct_choice: 'left',
   },
-  // ... Thêm 8 câu hỏi nữa vào đây
+  {
+    id: 3,
+    image_left: 'stall_dirty.png', // Quầy hàng bẩn
+    image_right: 'stall_clean.png',// Quầy hàng sạch
+    correct_choice: 'right',
+  },
+  // ... Thêm 7 câu hỏi nữa vào đây
 ];
