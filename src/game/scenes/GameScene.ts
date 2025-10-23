@@ -109,7 +109,7 @@ export class GameScene extends Phaser.Scene {
         this.choiceGates.children.iterate(c => {
             const gate = c as Phaser.Physics.Arcade.Sprite;
             gate.setVelocityY(200); // Tăng tốc độ rơi
-            gate.setScale(0.6); 
+            gate.setScale(0.3); // Điều chỉnh lại tỷ lệ cho ảnh 1024x1024
             return true;
         });
     }

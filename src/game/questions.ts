@@ -9,21 +9,27 @@ export interface Question {
 export const questions: Question[] = [
   {
     id: 1,
-    image_left: 'milk_bad.png',    // HSD: Tháng 10/2023
-    image_right: 'milk_ok.png',     // HSD: Tháng 10/2026
+    image_left: 'milk_bad.png',
+    image_right: 'milk_ok.png',
     correct_choice: 'right',
   },
   {
     id: 2,
-    image_left: 'check_first.png', // Ảnh icon "Kiểm tra quán"
-    image_right: 'eat_now.png',    // Ảnh icon "Ăn luôn"
+    image_left: 'check_first.png',
+    image_right: 'eat_now.png',
     correct_choice: 'left',
   },
   {
     id: 3,
-    image_left: 'stall_dirty.png', // Quầy hàng bẩn
-    image_right: 'stall_clean.png',// Quầy hàng sạch
+    image_left: 'stall_dirty.png',
+    image_right: 'stall_clean.png',
     correct_choice: 'right',
   },
-  // ... Thêm 7 câu hỏi nữa vào đây
+  {
+    id: 4,
+    image_left: 'pack_ok.png',
+    image_right: 'pack_bad.png',
+    correct_choice: 'left',
+  },
+  // ... Thêm các câu hỏi còn lại vào đây
 ];

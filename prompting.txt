@@ -1,0 +1,142 @@
+---
+Prompt tạo mascot
+
+
+Create a cartoon 2D character image:
+
+
+A full-body 2D vector character design of a cute and chubby cartoon pig detective, mascot for a kids' mobile game. The pig is a vibrant, friendly pink with a large, prominent, darker pink snout. It has big, expressive, curious eyes and a playful, clever expression.
+It's wearing a classic brown plaid deerstalker hat (Sherlock Holmes hat) that sits comically on its round head. In one trotter, it holds a large magnifying glass, actively investigating something off-camera.
+The art style is clean, colorful, with bold outlines and simple shading, perfect for a children's game. The character should feel funny, smart, and approachable. White background.
+
+
+
+
+---
+Prompt tìm dữ liệu:
+
+
+Tôi cần bạn tận dụng những nguồn dữ liệu khổng lồ từ internet để tìm kiếm các thông tin làm cho trò chơi về thực phẩm trong @Yêu cầu.txt như sau:
+- Tìm kiếm các dữ liệu thực tế về hình ảnh thực phẩm bẩn/ sạch, giả, thật của học sinh trung học cơ sở tại việt nam.
+- Ở đây có 4 nhóm loại: thực phẩm bẩn, sạch, giả, thật nên mỗi loại này cần 2-3 dữ liệu json tương ứng, ảnh không gặp vấn đề về bản quyền
+- Cần dữ liệu đưa ra dưới dạng json như sau:
+{
+"Type": (1 trong 4 loại: fake, real, clean, durty),
+"Sign": (Dấu hiệu nhận biết thực phẩm đó là bẩn hay sạch, là giả hay thật),
+"Link": (hình ảnh thực phẩm, link phải download được),
+"Info": (thông tin vụ việc liên quan nếu là fake hoặc durty",
+"alert": (cảnh báo tác hại của việc ăn thực phẩm đó),
+
+
+}
+
+
+Có vấn đề thắc mắc gì thì bạn có thể hỏi tôi để trước khi tìm kiếm
+
+
+Prompt tìm dữ liệu v2
+1. Ảnh để làm câu hỏi cho học sinh nhận biết 1 trong 4 loại tôi nêu, nên bạn tìm hình ảnh thực tế bắt giữ của đội thanh tra nhưng không nên có hình ảnh thanh tra ở đó (vì nếu có thanh tra thì có thể học sinh không hiểu rõ về vấn đề thực phẩm đó mà chọn mù theo dấu hiệu nhận biết
+2. Câu 2: đúng, thực phẩm thường xuất hiện trong sự lựa chọn của học sinh trung học cơ sở càng tốt
+3. đúng nhưng mà ưu tiên về
+nguyên liệu không đúng (vì sẽ dễ nhận biết hơn đối với các học sinh trung học cơ sở)A
+
+
+
+
+
+
+
+
+
+
+------
+Prompt background
+
+
+A medium shot of a Vietnamese middle school entrance, featuring two white pillars and a gate, surrounded by lush green trees and colorful flags. To the side, there is a dirty, unhygienic street food cart selling skewers. Behind the cart stands an evil-looking male vendor with a sinister smile. The entire scene is in a clean 2D vector cartoon style with bold black outlines and simple cell shading. Eye-level view. No text. --ar 16:9
+
+
+
+
+----
+Prompt yêu cầu tạo prompt tạo hộp sữa:
+
+
+Viết prompt tạo một hộp sữa, yêu cầu miêu tả chi tiết hộp sữa để tôi sử dụng prompt này tạo được 1 hộp sữa tương tự nhưng với ngày tháng năm khác
+> a modern milk carton, clean and new, with a clear expiration date of "October 2026", cartoon style, simple, isolated on a white background
+
+
+
+
+
+
+Prompt tạo hộp sữa:
+A single, brand-new paper milk carton with a classic gable top, standing upright. The carton is rendered in a clean 2D vector cartoon style, featuring bold black outlines and simple cell shading. The design on the carton is minimalist and modern: a primarily white surface with a simple graphic of a blue splashing milk drop and the word 'MILK' in a clean, sans-serif font. On the top folded part of the carton, a stamped expiration date is clearly visible, reading "HSD: 31/12/2025". The object is perfectly isolated on a solid, pure white background, no shadow, ensuring clean edges for easy background removal. --ar 1:1
+
+
+
+
+
+
+
+
+
+
+
+
+Prmpt cocacola
+A classic, iconic glass soda bottle with a contoured, fluted shape, filled with a dark, bubbly cola liquid and sealed with a simple red metal cap. The bottle features a prominent, vibrant red paper label wrapped around its middle. On this label, the brand name "Coca-Hola" is written in a stylized, flowing white script font. The entire object is rendered in a clean 2D vector cartoon style, featuring bold black outlines and simple cell shading. The bottle is perfectly isolated on a solid, pure white background, with no shadow, ensuring clean edges for easy background removal. --ar 1:1
+
+
+
+
+Prompt xiên que bẩn
+A single, unappetizing food skewer, threaded with pieces of mystery meat and old-looking vegetables. The entire skewer is glistening with a thick, greasy sheen, and several drops of dark, dirty-looking oil are dripping from the bottom tip. The meat has some overly charred, black burnt spots, and the overall color is a sickly, dull brown. The object is rendered in a clean 2D vector cartoon style, featuring bold black outlines and simple cell shading. It is perfectly isolated on a solid, pure white background, with no shadow. --ar 1:1
+
+
+
+
+Prompt chân gà
+
+
+A professionally packaged, vacuum-sealed chicken foot snack, of the type sold in a clean supermarket. The transparent plastic packaging reveals a single, plump, and appetizing-looking chicken foot in a clear, light-colored marinade. The package features a modern, clean, and minimalist label design with a green and white color scheme. Prominently displayed on the label is a professional logo and the exactly text "Chân Gà Sạch" written in a clean, modern, Vietnamese font. This is the only text on the label. The entire object is rendered in a clean 2D vector cartoon style, featuring bold black outlines and simple cell shading. It is perfectly isolated on a solid, pure white background, with no shadow. --ar 1:1
+
+
+Create a cartoon 2D character image:
+
+A full-body 2D vector character design of a cute and chubby cartoon pig detective, mascot for a kids' mobile game. The pig is a vibrant, friendly pink with a large, prominent, darker pink snout. It has big, expressive, curious eyes and a playful, clever expression.
+It's wearing a classic brown plaid deerstalker hat (Sherlock Holmes hat) that sits comically on its round head. In one trotter, it holds a large magnifying glass, actively investigating something off-camera.
+The art style is clean, colorful, with bold outlines and simple shading, perfect for a children's game. The character should feel funny, smart, and approachable. White background.
+
+
+
+The pig is in a **running pose**, captured at the moment **both feet are off the ground**. Its **legs are bent and tucked underneath its body** as it leaps forward.
+Prompt - Khung hình 3 (Chân trái tới):
+> [Dán Base Prompt vào đây] ... The pig is in a **running pose**, captured mid-stride. Its **left leg is extended forward**, and its **right leg is pushed back** (mirroring the first pose).
+Prompt - Khung hình 4 (Giống khung 2):
+> Bạn có thể dùng lại hình ảnh đã tạo cho khung hình 2, hoặc tạo một biến thể nhỏ.
+> [Dán Base Prompt vào đây] ... The pig is in a **running pose**, captured with **both feet off the ground**, legs tucked in, slightly different from the previous leap.
+
+
+
+
+
+
+
+
+Create a cartoon 2D character image:
+
+A full-body 2D vector character design of a cute and chubby cartoon pig detective, mascot for a kids' mobile game. The pig is a vibrant, friendly pink with a large, prominent, darker pink snout. It has big, expressive, curious eyes and a playful, clever expression.
+It's wearing a classic brown plaid deerstalker hat (Sherlock Holmes hat) that sits comically on its round head. In one trotter, it holds a large magnifying glass, actively investigating something off-camera.
+The art style is clean, colorful, with bold outlines and simple shading, perfect for a children's game. The character should feel funny, smart, and approachable. White background.
+The pig is in a **running pose**, captured mid-stride. Its **right leg is extended forward**, and its **left leg is pushed back**. Arms (trotters) are pumping in a running motion. The character looks determined and focused.
+
+
+Background:
+
+A 2D cartoon background for a vertical-scrolling runner mobile game. The image features a straight, endless sidewalk path viewed from a top-down perspective.
+
+The entire image must be a **perfectly vertically seamless pattern**, where the top edge connects flawlessly to the bottom edge.
+
+On either side of the sidewalk, there is a strip of bright green grass, simple cartoon trees, and occasional small, colorful flowers. The art style is bright, cheerful, and sunny, with bold outlines and simple, clean shading, suitable for a children's game.
+
